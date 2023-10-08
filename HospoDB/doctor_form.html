@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Doctor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<form action = "register_doctor.php" method = "get">
+	<div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Doctor:</span>
+		</div>
+		<input name = 'name' type="text" class="form-control" placeholder="Name" required>
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Age:</span>
+		</div>
+		<input name = 'age' type="text" class="form-control" required="">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Gender:</span>
+		</div>
+		<input name = 'gender' type="text" class="form-control" placeholder="M / F" required>
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Phone Number:</span>
+		</div>
+		<input name = 'phone_no' type="text" class="form-control" required>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Company Email:</span>
+		</div>
+		<input name = 'company_email' type="text" class="form-control" placeholder="someone@example.com" required="">
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Department:</span>
+		</div>
+		<select name = "department" class="form-control" required>
+			<option value="Neurology">Neurology</option>
+			<option value="Cardiology">Cardiology</option>
+			<option value="Orthopaedics">Orthopaedics</option>
+			<option value="E N T">E N T</option>
+			<option value="Dermatology">Dermatology</option>
+			<option value="Anesthesiology">Anesthesiology</option>
+			<option value="General Medicine">General Medicine</option>
+			<option value="General Surgery">General Surgery</option>
+			<option value="Accident & Emergency">Accident & Emergency</option>
+			<option value="Physiotherapy">Physiotherapy</option>
+		</select>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Office Number:</span>
+		</div>
+		<input name = "office_no" type="text" class="form-control" required>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Rank:</span>
+		</div>
+		<select name = "rank" class="form-control" required>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>	
+	</div>
+	<div class="input-group mb-3">
+		<div class ="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Working Hours:</span>		
+		</div>
+		<select type="text" name = "working_hours" class="form-control" required>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Salary:</span>
+		</div>
+		<input name = "salary" type="text" class="form-control" required>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Charges:</span>
+		</div>
+		<input name = "charges" type="text" class="form-control" required>
+	</div>
+	<div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Password:</span>
+		</div>
+		<input name = "login" type="password" class="form-control" placeholder="Password" required>
+	</div>
+	<!generate random password, generate salary acc to rank, generate charges acc to dept and rank>
+<input value ="register" type="submit" class="btn btn-primary btn-block text-white bg-danger">
+</form>
+</html>

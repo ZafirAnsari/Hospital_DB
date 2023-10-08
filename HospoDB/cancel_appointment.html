@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Appointment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h3>Cancel Appointment</h3>
+    <form action = "cancel_appointment.php" method = "get">
+        <div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+            <div class="input-group-prepend">
+                <span class="input-group-text text-white bg-danger">Appointment ID:</span>
+            </div>
+            <input name = "appointment_ID" type="text" class="form-control" placeholder="Enter Appointment ID To Cancel" required>
+        </div>
+    <input value = "Enter" type="submit" class="btn btn-primary btn-block text-white bg-danger">
+    </form>
+</body>
+</html>

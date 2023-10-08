@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Staff Information</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<form action = "edit_staff.php" method = "get">
+	<div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">StaffID:</span>
+		</div>
+		<input name = "staff_id" type="text" class="form-control" placeholder="Enter Staff ID" required>
+	</div>
+
+	<div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">StaffName:</span>
+		</div>
+		<input name = "name" type="text" class="form-control" placeholder="Name">
+	</div>
+
+	<div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Email:</span>
+		</div>
+		<input name = "email" type="text" class="form-control" placeholder="someone@somewhere.com">
+	</div>
+	
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Job:</span>
+		</div>
+		<select name = "job_description" class="form-control">
+			<option value="NULL"></option>
+			<option value="Finance">Finance</option>
+			<option value="Admin">Admin</option>
+			<option value="Receptionist">Receptionist</option>
+			<option value="Maintenance">Maintenance</option>
+		</select>
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Salary:</span>
+		</div>
+		<input name = "salary" type="text" class="form-control">
+	</div>
+	<div class="input-group mb-3">	<!add no-validate to class to validate after submission. requires JSQuery code OR>
+		<div class="input-group-prepend">
+			<span class="input-group-text text-white bg-danger">Password:</span>
+		</div>
+		<input name = "password" type="password" class="form-control" placeholder="Password">
+	</div>
+	<!generate random password, generate salary acc to rank>
+<input value = "Enter" type="submit" class="btn btn-primary btn-block text-white bg-danger">
+</form>
+<a href="admin_dashboard.php">
+	<button class="btn btn-primary btn-block text-white bg-danger">Back to Admin Menu</button>
+</a>
+</html>
